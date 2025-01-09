@@ -16,6 +16,10 @@ public class Customer {
         this.name = name;
     }
 
+    public Customer(String name) {
+        this.name = name;
+    }
+
     public Customer(String name, boolean active) {
         this.name = name;
         this.active = active;
