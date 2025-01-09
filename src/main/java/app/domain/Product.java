@@ -14,6 +14,11 @@ public class Product {
         this.price = price;
     }
 
+    public Product(String title, double price) {
+        this.title = title;
+        this.price = price;
+    }
+
     public Product(String title, double price, boolean active) {
         this.title = title;
         this.price = price;
