@@ -119,8 +119,10 @@ public class Customer {
 
     @Override
     public String toString() {
-        return String.format("Покупатель: id - %d, имя - %s, активен - %s.",
-                id, name, active ? "да" : "нет");
+        StringBuilder cart = new StringBuilder("\nКорзина:");
+        products.forEach(x -> cart.append("\n").append(x));
+        return String.format("Покупатель: id - %d, имя - %s.%s. ",
+                id, name, cart);
     }
 
 
