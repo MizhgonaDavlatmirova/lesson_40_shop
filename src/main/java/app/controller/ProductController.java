@@ -17,7 +17,7 @@ public class ProductController {
 
 
     }
-    Product save(String title, double price) throws ProductSaveException {
+    public Product save(String title, double price) throws ProductSaveException {
         Product product = new Product( title,  price);
         return service.save(product);
 
@@ -49,11 +49,12 @@ public class ProductController {
 
     }
     public double getActiveProductTotalCost() {
+
         return service.getActiveProductTotalCost();
     }
     public double getActiveProductAveragePrice() {
         return service.getActiveProductAveragePrice();
     }
 
-
 }
+
